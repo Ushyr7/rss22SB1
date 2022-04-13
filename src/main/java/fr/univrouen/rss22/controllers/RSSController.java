@@ -7,8 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class RSSController {
 		
 		@GetMapping("/resume")
-		public String getListRSSinXML() {
+		public String getListRSS() {
 			return "Envoi de la listse des flux RSS";
+		}
+		
+		@GetMapping("/rss22/resume/xml")
+		public String getListRSSinXML() {
+			return "";
 		}
 		
 		@GetMapping("/guid")
