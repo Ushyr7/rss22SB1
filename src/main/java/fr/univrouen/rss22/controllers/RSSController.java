@@ -39,6 +39,9 @@ public class RSSController {
 	@ResponseBody
 	public String getListRSSinXML() {
 		List<Feed> feed = fs.findAll();
+		if (feed == null) {
+			return "<items><items>";
+		}
 		List<Item> item = new ArrayList<Item>();
 		for (Feed f : feed) {
 			item.addAll(f.getItem());
@@ -67,6 +70,17 @@ public class RSSController {
 	@ResponseBody
 	public String getListRSSinHTML() {
 		List<Feed> feeds = this.fs.findAll();
+		if(feeds == null) {
+			return "<!DOCTYPE html>" 
+					+ "<html lang='fr'>"
+					+ "<head>"
+					+ "<title> Listes des articles </title>"
+					+ "</head>"
+					+ "<body>"
+					+ "<p> Aucun article. </p>"
+					+ "</body>"
+					+"</html>";
+		}
 		List<Item> item = new ArrayList<Item>();
 		for (Feed f : feeds) {
 			item.addAll(f.getItem());
