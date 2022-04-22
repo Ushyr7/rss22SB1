@@ -1,0 +1,777 @@
+{
+	"info": {
+		"_postman_id": "8cdb41eb-3a56-4f8a-88ad-e3e250c32a20",
+		"name": "RSS22_RIDEL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get_index",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "appli",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{server}}",
+					"host": [
+						"{{server}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_index",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "appli",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{server}}",
+							"host": [
+								"{{server}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Fri, 22 Apr 2022 12:21:08 GMT"
+						},
+						{
+							"key": "Accept-Ranges",
+							"value": "bytes"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-US"
+						},
+						{
+							"key": "Content-Length",
+							"value": "325"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:17:05 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194DZ0JXTQSABBJWQJSAYSQ"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"fr\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>RSS22-SB1 - index</title>\n    </head>\n    <body>\n        <img src=\"logo-univ-rouen.jpg\" height=\"225\" width =\"400\" alt=\"Logo de l'Université de Rouen Normandie\">\n        <h1>RSS22-SB1</h1>\n        <h2>Version : 1.0</h2>\n        <p>Développeur : RIDEL Quentin</p>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "get_help",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/help",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"help"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get_help",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/help",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"help"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Fri, 22 Apr 2022 12:21:08 GMT"
+						},
+						{
+							"key": "Accept-Ranges",
+							"value": "bytes"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=UTF-8"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-US"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2273"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:18:08 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194FWVFY3R69G4NST248B71"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"fr\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <title>RSS22-SB1 - Help</title>\n    </head>\n    <body>\n        <fieldset>\n            <legend>Opérations disponibles :</legend>\n            <ul>\n                <li>\n                    <h4>URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/\">https://rss22-ridel.cleverapps.io/</a>\n                    </h4>\n\t\t\t\tMéthode: GET\n                    <br>\n\t\t\t\tRésumé: Renvoie la page d'acceuil du projet en format HTML\n\t\t\t\n                </li>\n                <li>\n                    <h4>URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/help\">https://rss22-ridel.cleverapps.io/help</a>\n                    </h4>\n\t\t\t\tMéthode: GET\n                    <br>\n\t\t\t\tRésumé: Renvoie une page listant toute les opérations disponibles en format HTML\n\t\t\t\n                </li>\n                <li>\n                    <h4>URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/rss22/resume/xml\">https://rss22-ridel.cleverapps.io/rss22/resume/xml</a>\n                    </h4>\n\t\t\t\tMéthode: GET\n                    <br>\n\t\t\t\tRésumé: Affiche la liste des articles stockés en format XML.\n\t\t\t\n                </li>\n                <li>\n                    <h4> URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/rss22/resume/html\">https://rss22-ridel.cleverapps.io/rss22/resume/html</a>\n                    </h4>\n\t\t\t\tMéthode: GET\n                    <br>\n\t\t\t\tRésumé: Affiche la liste des articles stockés en format HTML.\n\t\t\t\n                </li>\n                <li>\n                    <h4>URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/rss22/resume/xml/{guid}\">https://rss22-ridel.cleverapps.io/rss22/resume/xml/{guid}</a>\n                    </h4>\n\t\t\t\tMéthode: GET\n                    <br>\n\t\t\t\tRésumé: Affiche l'article complet dont l'identifiant est {guid} au format XML\n\t\t\t\n                </li>\n                <li>\n                    <h4>URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/rss22/resume/html/{guid}\">https://rss22-ridel.cleverapps.io/rss22/resume/html/{guid}</a>\n                    </h4>\n\t\t\t\tMéthode: GET\n                    <br>\n\t\t\t\tRésumé: Affiche l'article complet dont l'identifiant est {guid} au format HTML\n\t\t\t\n                </li>\n                <li>\n                    <h4>URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/rss22/insert\">https://rss22-ridel.cleverapps.io/rss22/insert</a>\n                    </h4>\n\t\t\t\tMéthode: POST\n                    <br>\n\t\t\t\tRésumé: Ajoute le flux rss22 décrit, Si le flux est déjà présent, une erreur est retournée. Sinon il est ajouté à la base de données.\n\t\t\t\n                </li>\n                <li>\n                    <h4>URL: \n                        <a href=\"https://rss22-ridel.cleverapps.io/rss22/delete/{guid}\">https://rss22-ridel.cleverapps.io/rss22/delete/{guid}</a>\n                    </h4>\n\t\t\t\tMéthode: DELETE\n                    <br>\n\t\t\t\tRésumé: Suppression de l'article dont l'identifiant est {guid}.\n\t\t\t\n                </li>\n            </ul>\n        </fieldset>\n    </body>\n</html>"
+				}
+			]
+		},
+		{
+			"name": "get_resume_list_xml",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{server}}/rss22/resume/xml",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"xml"
+					]
+				},
+				"description": "Obtient la liste dans articles présent dans la base de données en format xml."
+			},
+			"response": [
+				{
+					"name": "get_resume_list_xml",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{server}}/rss22/resume/xml",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"resume",
+								"xml"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2566"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:18:31 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194GJT38AQ4E9H3KRT2YST5"
+						}
+					],
+					"cookie": [],
+					"body": "<items>\n    <item>\n        <title>Finistère : une mystérieuse inscription sur un rocher enfin dévoilée </title>\n        <published>2020-02-25T11:16:00</published>\n        <guid>d7f9e71a-5286-4921-b61d-f389007be6dc</guid>\n    </item>\n    <item>\n        <title>L’anglais en entreprise, entre nécessité et effet de mode</title>\n        <updated>2022-03-16T05:32:00</updated>\n        <guid>844833fc-fad9-48ec-91bd-5d9588a53020</guid>\n    </item>\n    <item>\n        <title>L’argot de bureau : « VUCA », quand l’entreprise navigue à vue</title>\n        <published>2022-03-14T06:00:00</published>\n        <guid>2ed3b3fb-6fc2-4c25-a99e-5451302429b0</guid>\n    </item>\n    <item>\n        <title>A Marseille, le combat d’Amine Kessaci, 18 ans, pour rendre plus vivables les cités</title>\n        <published>2022-03-16T06:00:00</published>\n        <guid>0cc519f3-90b2-4842-9f2a-74b3404e3f75</guid>\n    </item>\n    <item>\n        <title>De l’après-guerre au Panthéon, Joséphine Baker dans « Le Monde »</title>\n        <published>2022-03-16T06:00:00</published>\n        <guid>9ea6a16b-cb36-4678-98b5-aabc5b53cbd0</guid>\n    </item>\n    <item>\n        <title>VivaTech, premier salon technologique d'Europe, revient en juin à Paris en misant sur l'environnement et le \"Web 3.0\"</title>\n        <published>2022-03-16T06:00:00</published>\n        <guid>7cd3d985-c509-4df7-afb2-2f21423be7a8</guid>\n    </item>\n    <item>\n        <title>La maturité des entreprises françaises en cybersécurité reste faible</title>\n        <updated>2022-03-16T05:32:00</updated>\n        <guid>5192bde6-c5b3-42e9-98f9-6bcc941645a4</guid>\n    </item>\n    <item>\n        <title>La russie censure-t-elle autant que la chine</title>\n        <published>2022-03-17T08:28:00</published>\n        <guid>f19b1020-45c2-4cdb-a8c7-686c4b1b50a1</guid>\n    </item>\n    <item>\n        <title>Le metaverse va voir sa première école apparaitre à Paris en 2022, une cinquantaine d'élèves sont attendus.</title>\n        <published>2022-03-17T09:10:00</published>\n        <guid>5c1adf03-2be0-4f74-9b79-032de9f3151c</guid>\n    </item>\n    <item>\n        <title>En Ukraine, la plus grande centrale nucléaire d’Europe tombée aux mains de la Russie</title>\n        <published>2022-03-04T11:30:08</published>\n        <guid>388206d7-b404-433c-b4df-62c9687a59c8</guid>\n    </item>\n    <item>\n        <title>La « lente » décrue des inégalités entre les femmes et les hommes</title>\n        <published>2022-03-04T10:04:30</published>\n        <guid>388206e8-b5ad-433c-54df-62c9de2559c8</guid>\n    </item>\n    <item>\n        <title>La DGCCRF s'attaque aux ventes de smartphones et tablettes reconditionnées</title>\n        <updated>2022-03-07T07:45:05</updated>\n        <guid>aaaba820-099f-42c1-93d8-4c5d9b3735af</guid>\n    </item>\n    <item>\n        <title>Semi-conducteurs : Intel acte un investissement de 33 milliards d'euros en Europe</title>\n        <updated>2022-03-15T18:01:00</updated>\n        <guid>c37822fb-a151-4904-8f04-4b68531e5b1b</guid>\n    </item>\n</items>"
+				}
+			]
+		},
+		{
+			"name": "get_resume_list_html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/rss22/resume/html",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"html"
+					]
+				},
+				"description": "Obtient la liste des articles dans la base de données en format html"
+			},
+			"response": [
+				{
+					"name": "get_resume_list_html",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/rss22/resume/html",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"resume",
+								"html"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2425"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:18:41 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194GWX9WB2B51TE7PPBMT6D"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html><html lang='fr'><head><title> Listes des articles </title></head><body><table><thead><tr><th>Titre</th><th>Date de publication/mise à jour</th><th>guid</th></tr></thead><tbody><tr><td>Finistère : une mystérieuse inscription sur un rocher enfin dévoilée </td><td>2020-02-25T11:16:00</td><td>d7f9e71a-5286-4921-b61d-f389007be6dc</td></tr><tr><td>L’anglais en entreprise, entre nécessité et effet de mode</td><td>2022-03-16T05:32:00</td><td>844833fc-fad9-48ec-91bd-5d9588a53020</td></tr><tr><td>L’argot de bureau : « VUCA », quand l’entreprise navigue à vue</td><td>2022-03-14T06:00:00</td><td>2ed3b3fb-6fc2-4c25-a99e-5451302429b0</td></tr><tr><td>A Marseille, le combat d’Amine Kessaci, 18 ans, pour rendre plus vivables les cités</td><td>2022-03-16T06:00:00</td><td>0cc519f3-90b2-4842-9f2a-74b3404e3f75</td></tr><tr><td>De l’après-guerre au Panthéon, Joséphine Baker dans « Le Monde »</td><td>2022-03-16T06:00:00</td><td>9ea6a16b-cb36-4678-98b5-aabc5b53cbd0</td></tr><tr><td>VivaTech, premier salon technologique d'Europe, revient en juin à Paris en misant sur l'environnement et le \"Web 3.0\"</td><td>2022-03-16T06:00:00</td><td>7cd3d985-c509-4df7-afb2-2f21423be7a8</td></tr><tr><td>La maturité des entreprises françaises en cybersécurité reste faible</td><td>2022-03-16T05:32:00</td><td>5192bde6-c5b3-42e9-98f9-6bcc941645a4</td></tr><tr><td>La russie censure-t-elle autant que la chine</td><td>2022-03-17T08:28:00</td><td>f19b1020-45c2-4cdb-a8c7-686c4b1b50a1</td></tr><tr><td>Le metaverse va voir sa première école apparaitre à Paris en 2022, une cinquantaine d'élèves sont attendus.</td><td>2022-03-17T09:10:00</td><td>5c1adf03-2be0-4f74-9b79-032de9f3151c</td></tr><tr><td>En Ukraine, la plus grande centrale nucléaire d’Europe tombée aux mains de la Russie</td><td>2022-03-04T11:30:08</td><td>388206d7-b404-433c-b4df-62c9687a59c8</td></tr><tr><td>La « lente » décrue des inégalités entre les femmes et les hommes</td><td>2022-03-04T10:04:30</td><td>388206e8-b5ad-433c-54df-62c9de2559c8</td></tr><tr><td>La DGCCRF s'attaque aux ventes de smartphones et tablettes reconditionnées</td><td>2022-03-07T07:45:05</td><td>aaaba820-099f-42c1-93d8-4c5d9b3735af</td></tr><tr><td>Semi-conducteurs : Intel acte un investissement de 33 milliards d'euros en Europe</td><td>2022-03-15T18:01:00</td><td>c37822fb-a151-4904-8f04-4b68531e5b1b</td></tr></tbody></table></body></html>"
+				}
+			]
+		},
+		{
+			"name": "get_article_xml",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/rss22/resume/xml/844833fc-fad9-48ec-91bd-5d9588a53020",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"xml",
+						"844833fc-fad9-48ec-91bd-5d9588a53020"
+					]
+				},
+				"description": "Obtient l'article dont le guid est passé en paramètre dans l'url en format XML\r\n"
+			},
+			"response": [
+				{
+					"name": "get_article_xml",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/rss22/resume/xml/9ea6a16b-cb36-4678-98b5-aabc5b53cbd0",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"resume",
+								"xml",
+								"9ea6a16b-cb36-4678-98b5-aabc5b53cbd0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1816"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:20:29 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194M67AFG6SSY3EEGQZGSJ5"
+						}
+					],
+					"cookie": [],
+					"body": "<xml>\n    <feed lang='fr'>\n        <title>flux TP3</title>\n        <pubDate>2022-03-16T22:15:00</pubDate>\n        <copyright>univrouen 2022</copyright>\n        <link rel='alternate' type='application/rss+xml' href='http://univ-rouen.fr'></link>\n        <item>\n            <guid>9ea6a16b-cb36-4678-98b5-aabc5b53cbd0</guid>\n            <title>De l’après-guerre au Panthéon, Joséphine Baker dans « Le Monde »</title>\n            <category term='Campus'/>\n            <published>2022-03-16T06:00:00</published>\n            <image type='jpeg' href='https://img.lemde.fr/2021/09/01/0/0/1738/2500/664/0/75/0/2a82c32_140680460-000-app2000032695242.jpg' alt='Joséphine Backer en coostume de scène, lors du gala franco-américain du 27 novembre 1973' length='644'/>\n            <content type='text' href='https://www.lemonde.fr/m-le-mag/article/2021/09/03/de-l-apres-guerre-au-pantheon-     josephine-baker-dans-le-monde_6093281_4500055.html'>Le 30 novembre, Joséphine Baker deviendra la première femme noire à entrer au Panthéon. Une décision prise fin août\n    \t par Emmanuel Macron pour honorer la mémoire de la chanteuse franco-américaine, icône des Années folles. Autant dire que l’artiste,\n    \t  surnommée « la Vénus noire », a connu ses plus grandes heures de gloire bien avant la création du journal Le Monde, en 1944.\n\n\t\tC’est pourquoi sa première apparition dans les colonnes du quotidien, le 5 juin 1946, marque presque le début d’un déclin. Dans\n\t\t un compte rendu de spectacle avec Yvonne Darriès en vedette, elle est simplement mentionnée comme faisant partie des « anciennes » \n\t\t aux côtés d’autres grands noms du music-hall français comme Mistinguett. Il faut attendre 1949 pour que la danseuse, née en 1906 \n\t\t aux Etats-Unis dans le Missouri, mais naturalisée française en 1937, soit au centre d’un article.\n    </content>\n            <author>\n                <name>Robin Richardot</name>\n            </author>\n        </item>\n    </feed>\n</xml>"
+				}
+			]
+		},
+		{
+			"name": "get_article_html",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/rss22/resume/html/844833fc-fad9-48ec-91bd-5d9588a53020",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"resume",
+						"html",
+						"844833fc-fad9-48ec-91bd-5d9588a53020"
+					]
+				},
+				"description": "Obtient l'article dont le guid est passé en paramètre dans l'url en format HTML"
+			},
+			"response": [
+				{
+					"name": "get_article_html",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/rss22/resume/html/844833fc-fad9-48ec-91bd-5d9588a53020",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"resume",
+								"html",
+								"844833fc-fad9-48ec-91bd-5d9588a53020"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2588"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:21:03 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194N75R3HGMB6PRH015V5Z9"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html><html lang='fr'><head><title>flux TP32022-03-16T22:15:00univrouen 2022</title></head><body><div><a rel='alternate' type='application/rss+xml' href='http://univ-rouen.fr'></a><h1>L’anglais en entreprise, entre nécessité et effet de mode</h1><h4>Catégorie : Societe</h4><div>Mise à jour : 2022-03-16T05:32:00</div><img src='https://img.lemde.fr/2022/03/10/277/0/5906/2953/1342/696/60/0/850c8b5_703134791-pns-6167534.jpg' alt='Robot avec une pancarte 'I need a job''/><div>Connaissez-vous le métier de « growth hacker » (littéralement « pirate de la croissance ») ? \n    \tCet intitulé de poste, fréquent dans le numérique, est souvent moqué, car personne ne sait ce qu’il recouvre : \n    \tpour Valentin Pouillart, PDG de la plate-forme CVDesignR, « un jeune qui fait ce métier va dire qu’il est un \n    \tpeu le couteau suisse du développement de la boîte. Mais dans les pays anglo-saxons, le growth hacking est une \n    \tfonction de développement commercial. L’exportation en France d’intitulés de postes anglais peut changer \n    \tleur sens, d’autant que tout le monde ne saura pas à quoi ils renvoient… »\n\t\tL’anglais tient une place importante dans la société et les entreprises françaises, et la semaine de la \n\t\tfrancophonie, qui se tient du 12 au 20 mars, aura sans doute l’occasion de le rappeler. Sa maîtrise est \n\t\taujourd’hui un atout pour obtenir un emploi : selon une étude publiée en décembre 2021 sur le site d’emploi \n\t\tMonster, 13 % des offres d’emploi disponibles en France exigent une sérieuse maîtrise de l’anglais, et le \n\t\tchiffre monte à 31 % dans le secteur de l’information et des nouvelles technologies.\n\n\t\tLa tendance est aussi à angliciser les noms de métiers, majoritairement pour les cadres, les secteurs du numérique,\n\t\tdu marketing et du management. L’intitulé de poste en anglais est ainsi devenu une norme, selon Julien Broue, \n\t\tcofondateur du cabinet de recrutement Easy Partner, « du chef de produit devenu “product owner” au simple mot “manager”, \n\t\tcar l’entreprise qui garde la terminologie française ne sera même plus visible sur le marché de l’emploi.\n    </div> <br><div> Source : <a href='https://www.lemonde.fr/emploi/article/2022/03/16/l-anglais-en-entreprise-entre-necessite-et-effet-de-mode_6117686_1698637.html'>https://www.lemonde.fr/emploi/article/2022/03/16/l-anglais-en-entreprise-entre-necessite-et-effet-de-mode_6117686_1698637.html</a></div><p> Auteur : Jules Thomas - https://www.lemonde.fr/signataires/jules-thomas</p></div></body></html>"
+				}
+			]
+		},
+		{
+			"name": "delete_article_success",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/rss22/delete/d7f9e71a-5286-4921-b61d-f389007be6dc",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"delete",
+						"d7f9e71a-5286-4921-b61d-f389007be6dc"
+					]
+				},
+				"description": "Suppression d'un article qui existe dans la base de données"
+			},
+			"response": [
+				{
+					"name": "delete_article_success",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/rss22/delete/d7f9e71a-5286-4921-b61d-f389007be6dc",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"delete",
+								"d7f9e71a-5286-4921-b61d-f389007be6dc"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:21:39 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194PA6NA4EWX1106KHN8NES"
+						}
+					],
+					"cookie": [],
+					"body": "<id>d7f9e71a-5286-4921-b61d-f389007be6dc</id>"
+				}
+			]
+		},
+		{
+			"name": "delete_article_failure",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/rss22/delete/un_guid_qui_n'existe_pas",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"delete",
+						"un_guid_qui_n'existe_pas"
+					]
+				},
+				"description": "Suppression d'un article qui n'existe pas dans la base de données."
+			},
+			"response": [
+				{
+					"name": "delete_article_failure",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/rss22/delete/un_guid_qui_n'existe_pas",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"delete",
+								"un_guid_qui_n'existe_pas"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:21:26 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194NY9PXDCZ35YT24V9ZRFB"
+						}
+					],
+					"cookie": [],
+					"body": "<status>ERROR : un_guid_qui_n'existe_pas not found</status>"
+				}
+			]
+		},
+		{
+			"name": "inser_flux_already_exists",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<feed xmlns:rss=\"http://univrouen.fr/rss22\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" lang=\"fr\" xsi:schemaLocation=\"http://univrouen.fr/rss22 rss22.tp1.xsd\">\r\n  <title>flux TP3</title>\r\n  <pubDate>2022-03-16T08:00:00</pubDate>\r\n  <copyright>univrouen 2022</copyright>\r\n  <link href=\"http://univ-rouen.fr\" rel=\"alternate\" type=\"application/rss+xml\"/>\r\n  <item>\r\n    <guid>5192bde6-c5b3-42e9-98f9-6bcc941645a4</guid>\r\n    <title>La maturité des entreprises françaises en cybersécurité reste faible</title>\r\n    <category term=\"Societe\"/>\r\n    <updated>2022-03-16T05:32:00</updated>\r\n    <image alt=\"Présentation graphique des données citées dans l'article : Note de maturité globale évaluée à 46%\" href=\"https://img1.lemondeinformatique.fr/fichiers/telechargement/wavestone-maturite.png\" length=\"644\" type=\"png\"/>\r\n    <content href=\"https://www.lemondeinformatique.fr/actualites/lire-la-maturite-des-entreprises-francaises-en-cybersecurite-reste-faible-86145.html\" type=\"text\">Les études sur la cybersécurité se suivent mais ne se ressemblent pas nécessairement. Ainsi, le rapport élaboré par Wavestone a pour ambition de connaître le niveau de maturité des entreprises dans ce domaine. Le cabinet de conseil a mené ses travaux sur 3 ans auprès de 75 clients tous secteurs confondus, avec les 2/3 comprenant plus de 10 000 salariés. 200 questions ont été posées aux sociétés choisies en se basant sur les référentiels NIST CSF et les normes ISO 27001/2.\r\n46% de taux de maturité, mais des grands écarts selon les secteurs\r\n\r\nDans « ce contrôle technique de la cybersécurité des entreprises », le niveau global est relativement faible avec 46%. « Mais dans le détail, il existe des différences entre les secteurs d’activité », souligne Gérôme Billois, associé en charge de la cybersécurité au sein de Wavestone. Au fond du classement global, on retrouve les services (42,5%) et le service public (36,9%). Par contre, deux secteurs sortent du lot, « la finance qui atteint 54,4% et 51,8% pour l’énergie ». Pour expliquer ce bon niveau, « il s’agit de marché régulé et la réglementation comme la loi de programmation militaire ou la directive européenne NIS, a un impact », observe l’analyste. Les secteurs réglementés affichent une maturité de 55,4% contre 43,3% pour ceux qui ne le sont pas.\r\n    </content>\r\n    <author>\r\n      <name>Jaques Cheminat</name>\r\n      <uri>https://www.lemondeinformatique.fr/actualites/auteur-jacques-cheminat-572.html</uri>\r\n    </author>\r\n  </item>\r\n  <item>\r\n    <guid>f19b1020-45c2-4cdb-a8c7-686c4b1b50a1</guid>\r\n    <title>La russie censure-t-elle autant que la chine</title>\r\n    <category term=\"Societe\"/>\r\n    <published>2022-03-17T08:28:00</published>\r\n    <image alt=\"Illustration de Simon Landrein. Un homme dont la lnague est une cravate\" href=\"https://img.lemde.fr/2021/04/16/0/0/655/436/664/0/75/0/4227cf2_847766270-argot-de-bureau.png\" length=\"644\" type=\"jpeg\"/>\r\n    <content href=\"https://www.numerama.com/politique/887199-la-russie-censure-t-elle-internet-autant-que-la-chine.html\" type=\"src\"/>\r\n    <author>\r\n      <name>Aurore Gayte</name>\r\n      <uri>https://www.numerama.com/author/auroregayte</uri>\r\n    </author>\r\n  </item>\r\n  \r\n  <item>\r\n    <guid>5c1adf03-2be0-4f74-9b79-032de9f3151c</guid>\r\n    <title>Le metaverse va voir sa première école apparaitre à Paris en 2022, une cinquantaine d'élèves sont attendus.</title>\r\n    <category term=\"Campus\"/>\r\n    <published>2022-03-17T09:10:00</published>\r\n    \r\n    <content type=\"text\">C'est donc une première pour la France, à Paris plus exactement que le premier « Metaverse College » va ouvrir ses portes. Une première mondiale ! Le futur directeur de l'établissement a annoncé la mise en place d'un diplôme « Chef de projet metaverse », mais aussi de trois masters en continu ou en alternance. L'établissement sera dédié à la création, la structuration et au développement de cet univers 3D.\r\n\r\nCes diplômes seront composés de trois domaines : la finance avec la cryptomonnaie, les blockchains, l'art avec les NFT, le design d'oeuvres numériques et enfin le développement de la data avec la conception d'univers virtuels.\r\nCe sera donc une cinquantaine d'élèves avec un niveau de bac+2 qui intégreront l'école dans l'Arche de la Défense pour obtenir leur diplôme déjà reconnu par l'état. Ces derniers offriront pas mal de débouchés comme les marketing virtuel, data architecte, designer 3D, NFT designer...\r\n\r\nPour y rentrer, il faudra cependant débourser entre 6500 et 8000 € pour les bac +3 et 11 000 € par an pour les masters. À la rentrée 2023, une formation postbac verra aussi le jour, mais dont le prix n'est pas encore connu.\r\n\r\n    </content>\r\n    <contributor>\r\n      <name>Jérémy L.</name>\r\n      <email>jeremy.l@generation-nt.com</email>\r\n    </contributor>\r\n  </item>\r\n </feed>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/rss22/insert",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"insert"
+					]
+				},
+				"description": "Tentative d'insertion d'un flux qui existe déjà dans la base de données"
+			},
+			"response": [
+				{
+					"name": "inser_flux_already_exists",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<feed xmlns:rss=\"http://univrouen.fr/rss22\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" lang=\"fr\" xsi:schemaLocation=\"http://univrouen.fr/rss22 rss22.tp1.xsd\">\r\n  <title>flux TP3</title>\r\n  <pubDate>2022-03-16T08:00:00</pubDate>\r\n  <copyright>univrouen 2022</copyright>\r\n  <link href=\"http://univ-rouen.fr\" rel=\"alternate\" type=\"application/rss+xml\"/>\r\n  <item>\r\n    <guid>5192bde6-c5b3-42e9-98f9-6bcc941645a4</guid>\r\n    <title>La maturité des entreprises françaises en cybersécurité reste faible</title>\r\n    <category term=\"Societe\"/>\r\n    <updated>2022-03-16T05:32:00</updated>\r\n    <image alt=\"Présentation graphique des données citées dans l'article : Note de maturité globale évaluée à 46%\" href=\"https://img1.lemondeinformatique.fr/fichiers/telechargement/wavestone-maturite.png\" length=\"644\" type=\"png\"/>\r\n    <content href=\"https://www.lemondeinformatique.fr/actualites/lire-la-maturite-des-entreprises-francaises-en-cybersecurite-reste-faible-86145.html\" type=\"text\">Les études sur la cybersécurité se suivent mais ne se ressemblent pas nécessairement. Ainsi, le rapport élaboré par Wavestone a pour ambition de connaître le niveau de maturité des entreprises dans ce domaine. Le cabinet de conseil a mené ses travaux sur 3 ans auprès de 75 clients tous secteurs confondus, avec les 2/3 comprenant plus de 10 000 salariés. 200 questions ont été posées aux sociétés choisies en se basant sur les référentiels NIST CSF et les normes ISO 27001/2.\r\n46% de taux de maturité, mais des grands écarts selon les secteurs\r\n\r\nDans « ce contrôle technique de la cybersécurité des entreprises », le niveau global est relativement faible avec 46%. « Mais dans le détail, il existe des différences entre les secteurs d’activité », souligne Gérôme Billois, associé en charge de la cybersécurité au sein de Wavestone. Au fond du classement global, on retrouve les services (42,5%) et le service public (36,9%). Par contre, deux secteurs sortent du lot, « la finance qui atteint 54,4% et 51,8% pour l’énergie ». Pour expliquer ce bon niveau, « il s’agit de marché régulé et la réglementation comme la loi de programmation militaire ou la directive européenne NIS, a un impact », observe l’analyste. Les secteurs réglementés affichent une maturité de 55,4% contre 43,3% pour ceux qui ne le sont pas.\r\n    </content>\r\n    <author>\r\n      <name>Jaques Cheminat</name>\r\n      <uri>https://www.lemondeinformatique.fr/actualites/auteur-jacques-cheminat-572.html</uri>\r\n    </author>\r\n  </item>\r\n  <item>\r\n    <guid>f19b1020-45c2-4cdb-a8c7-686c4b1b50a1</guid>\r\n    <title>La russie censure-t-elle autant que la chine</title>\r\n    <category term=\"Societe\"/>\r\n    <published>2022-03-17T08:28:00</published>\r\n    <image alt=\"Illustration de Simon Landrein. Un homme dont la lnague est une cravate\" href=\"https://img.lemde.fr/2021/04/16/0/0/655/436/664/0/75/0/4227cf2_847766270-argot-de-bureau.png\" length=\"644\" type=\"jpeg\"/>\r\n    <content href=\"https://www.numerama.com/politique/887199-la-russie-censure-t-elle-internet-autant-que-la-chine.html\" type=\"src\"/>\r\n    <author>\r\n      <name>Aurore Gayte</name>\r\n      <uri>https://www.numerama.com/author/auroregayte</uri>\r\n    </author>\r\n  </item>\r\n  \r\n  <item>\r\n    <guid>5c1adf03-2be0-4f74-9b79-032de9f3151c</guid>\r\n    <title>Le metaverse va voir sa première école apparaitre à Paris en 2022, une cinquantaine d'élèves sont attendus.</title>\r\n    <category term=\"Campus\"/>\r\n    <published>2022-03-17T09:10:00</published>\r\n    \r\n    <content type=\"text\">C'est donc une première pour la France, à Paris plus exactement que le premier « Metaverse College » va ouvrir ses portes. Une première mondiale ! Le futur directeur de l'établissement a annoncé la mise en place d'un diplôme « Chef de projet metaverse », mais aussi de trois masters en continu ou en alternance. L'établissement sera dédié à la création, la structuration et au développement de cet univers 3D.\r\n\r\nCes diplômes seront composés de trois domaines : la finance avec la cryptomonnaie, les blockchains, l'art avec les NFT, le design d'oeuvres numériques et enfin le développement de la data avec la conception d'univers virtuels.\r\nCe sera donc une cinquantaine d'élèves avec un niveau de bac+2 qui intégreront l'école dans l'Arche de la Défense pour obtenir leur diplôme déjà reconnu par l'état. Ces derniers offriront pas mal de débouchés comme les marketing virtuel, data architecte, designer 3D, NFT designer...\r\n\r\nPour y rentrer, il faudra cependant débourser entre 6500 et 8000 € pour les bac +3 et 11 000 € par an pour les masters. À la rentrée 2023, une formation postbac verra aussi le jour, mais dont le prix n'est pas encore connu.\r\n\r\n    </content>\r\n    <contributor>\r\n      <name>Jérémy L.</name>\r\n      <email>jeremy.l@generation-nt.com</email>\r\n    </contributor>\r\n  </item>\r\n </feed>\r\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/rss22/insert",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"insert"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:22:09 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194Q8AE1MZKV157GAC6Z0Q6"
+						}
+					],
+					"cookie": [],
+					"body": "<error>flux TP3 : 2022-03-16T08:00:00 ALREADY EXISTS</error>"
+				}
+			]
+		},
+		{
+			"name": "inser_new_flux",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<xml version =\"1.0\">\r\n\t<feed xmlns:rss=\"http://univrouen.fr/rss22\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" lang=\"fr\" xsi:schemaLocation=\"http://univrouen.fr/rss22 rss22.tp1.xsd\">\r\n  \t\t<title>flux  rss22 minimal</title>\r\n  \t\t<pubDate>2022-03-16T08:00:00</pubDate>\r\n  \t\t<copyright>univrouen 2022</copyright>\r\n  \t\t<link href=\"http://univ-rouen.fr\" rel=\"alternate\" type=\"application/rss+xml\"/>\r\n  \t\t<item>\r\n    \t\t<guid>5192bde6-c5b3-42e9-98f9-6bcc941645b5</guid>\r\n    \t\t<title>Un article</title>\r\n    \t\t<category term=\"a\"/>\r\n    \t\t<updated>2022-03-16T05:32:00</updated>\r\n    \t\t<content type=\"text\">Un article minimaliste</content>\r\n    \t\t<author>\r\n      \t\t\t<name>Un Auteur</name>\r\n    \t\t</author>\r\n  \t\t</item>\r\n \t</feed>\r\n</xml>\r\n",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server}}/rss22/insert",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"rss22",
+						"insert"
+					]
+				},
+				"description": "Insertion d'un nouveau flux dans la base de données.\r\n"
+			},
+			"response": [
+				{
+					"name": "inser_new_flux",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<feed xmlns:rss=\"http://univrouen.fr/rss22\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" lang=\"fr\" xsi:schemaLocation=\"http://univrouen.fr/rss22 rss22.tp1.xsd\">\r\n  \t\t<title>flux  rss22 minimal</title>\r\n  \t\t<pubDate>2022-03-16T08:00:00</pubDate>\r\n  \t\t<copyright>univrouen 2022</copyright>\r\n  \t\t<link href=\"http://univ-rouen.fr\" rel=\"alternate\" type=\"application/rss+xml\"/>\r\n  \t\t<item>\r\n    \t\t<guid>5192bde6-c5b3-42e9-98f9-6bcc941645b5</guid>\r\n    \t\t<title>Un article</title>\r\n    \t\t<category term=\"a\"/>\r\n    \t\t<updated>2022-03-16T05:32:00</updated>\r\n    \t\t<content type=\"text\">Un article minimaliste</content>\r\n    \t\t<author>\r\n      \t\t\t<name>Un Auteur</name>\r\n    \t\t</author>\r\n  \t\t</item>\r\n</feed>\r\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/rss22/insert",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"rss22",
+								"insert"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "xml",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/xml;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 22 Apr 2022 17:23:24 GMT"
+						},
+						{
+							"key": "Sozu-Id",
+							"value": "01G194SGM9DWFFMZ6GYP5P3PE4"
+						}
+					],
+					"cookie": [],
+					"body": "<item>Last insert\n    <guid>5192bde6-c5b3-42e9-98f9-6bcc941645b5</guid>\n</item>"
+				}
+			]
+		}
+	]
+}

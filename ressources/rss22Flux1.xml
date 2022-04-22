@@ -1,0 +1,18 @@
+<xml version ="1.0">
+	<feed xmlns:rss="http://univrouen.fr/rss22" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="fr" xsi:schemaLocation="http://univrouen.fr/rss22 rss22.tp1.xsd">
+  		<title>flux  rss22 minimal</title>
+  		<pubDate>2022-03-16T08:00:00</pubDate>
+  		<copyright>univrouen 2022</copyright>
+  		<link href="http://univ-rouen.fr" rel="alternate" type="application/rss+xml"/>
+  		<item>
+    		<guid>5192bde6-c5b3-42e9-98f9-6bcc941645b5</guid>
+    		<title>Un article</title>
+    		<category term="a"/>
+    		<updated>2022-03-16T05:32:00</updated>
+    		<content type="text">Un article minimaliste</content>
+    		<author>
+      			<name>Un Auteur</name>
+    		</author>
+  		</item>
+ 	</feed>
+</xml>
