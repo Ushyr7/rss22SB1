@@ -235,7 +235,7 @@ public class RSSController {
 				html += "<div>" + i.getContent().getValue() + "</div>";
 			} else {
 				html += "<div>" + i.getContent().getValue() + "</div> <br>"
-						+"<div> Source : " + i.getContent().getHref() + "</div>";
+						+"<div> Source : <a href='" + i.getContent().getHref() + "'>" + i.getContent().getHref() + "</a></div>";
 			}
 			
 			if(i.getAuthor() != null) {
