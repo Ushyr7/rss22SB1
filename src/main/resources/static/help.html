@@ -9,24 +9,44 @@
 			<legend>Opérations disponibles :</legend>
 			<ul>
 			<li>
-				<h4>URL: https://rss22-ridel.cleverapps.io/</h4>
+				<h4>URL: <a href="https://rss22-ridel.cleverapps.io/">https://rss22-ridel.cleverapps.io/</a></h4>
 				Méthode: GET	<br>
 				Résumé: Renvoie la page d'acceuil du projet en format HTML
 			</li>
 			<li>
-				<h4>URL: https://rss22-ridel.cleverapps.io/help	</h4>
+				<h4>URL: <a href="https://rss22-ridel.cleverapps.io/help">https://rss22-ridel.cleverapps.io/help</a>	</h4>
 				Méthode: GET	<br>
 				Résumé: Renvoie une page listant toute les opérations disponibles en format HTML
 			</li>
 			<li>
-				<h4>URL: https://rss22-ridel.cleverapps.io/rss22/resume/xml	</h4>
+				<h4>URL: <a href="https://rss22-ridel.cleverapps.io/rss22/resume/xml">https://rss22-ridel.cleverapps.io/rss22/resume/xml</a>	</h4>
 				Méthode: GET	<br>
 				Résumé: Affiche la liste des articles stockés en format XML.
 			</li>
 			<li>
-				<h4>URL: https://rss22-ridel.cleverapps.io/rss22/resume/html</h4>
+				<h4> URL: <a href="https://rss22-ridel.cleverapps.io/rss22/resume/html">https://rss22-ridel.cleverapps.io/rss22/resume/html</a></h4>
 				Méthode: GET	<br>
 				Résumé: Affiche la liste des articles stockés en format HTML.
+			</li>
+			<li>
+				<h4>URL: <a href="https://rss22-ridel.cleverapps.io/rss22/resume/xml/{guid}">https://rss22-ridel.cleverapps.io/rss22/resume/xml/{guid}</a></h4>
+				Méthode: GET	<br>
+				Résumé: Affiche l'article complet dont l'identifiant est {guid} au format XML
+			</li>
+			<li>
+				<h4>URL: <a href="https://rss22-ridel.cleverapps.io/rss22/resume/html/{guid}">https://rss22-ridel.cleverapps.io/rss22/resume/html/{guid}</a></h4>
+				Méthode: GET	<br>
+				Résumé: Affiche l'article complet dont l'identifiant est {guid} au format HTML
+			</li>
+			<li>
+				<h4>URL: <a href="https://rss22-ridel.cleverapps.io/rss22/insert">https://rss22-ridel.cleverapps.io/rss22/insert</a></h4>
+				Méthode: POST	<br>
+				Résumé: Ajoute le flux rss22 décrit, Si le flux est déjà présent, une erreur est retournée. Sinon il est ajouté à la base de données.
+			</li>
+			<li>
+				<h4>URL: <a href="https://rss22-ridel.cleverapps.io/rss22/delete/{guid}">https://rss22-ridel.cleverapps.io/rss22/delete/{guid}</a></h4>
+				Méthode: DELETE	<br>
+				Résumé: Suppression de l'article dont l'identifiant est {guid}.
 			</li>
 			</ul>
 		</fieldset>
