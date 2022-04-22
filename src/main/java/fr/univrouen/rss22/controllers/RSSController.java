@@ -39,9 +39,6 @@ public class RSSController {
 	@ResponseBody
 	public String getListRSSinXML() {
 		List<Feed> feed = fs.findAll();
-		if (feed == null) {
-			return "<items><items>";
-		}
 		List<Item> item = new ArrayList<Item>();
 		for (Feed f : feed) {
 			item.addAll(f.getItem());
@@ -70,17 +67,6 @@ public class RSSController {
 	@ResponseBody
 	public String getListRSSinHTML() {
 		List<Feed> feeds = this.fs.findAll();
-		if(feeds == null) {
-			return "<!DOCTYPE html>" 
-					+ "<html lang='fr'>"
-					+ "<head>"
-					+ "<title> Listes des articles </title>"
-					+ "</head>"
-					+ "<body>"
-					+ "<p> Aucun article. </p>"
-					+ "</body>"
-					+"</html>";
-		}
 		List<Item> item = new ArrayList<Item>();
 		for (Feed f : feeds) {
 			item.addAll(f.getItem());
@@ -127,7 +113,7 @@ public class RSSController {
 		Feed f = fs.findFeedContainingItemWithGuid(guid);
 		Item i = fs.findItemWithGuid(guid);
 		if(i == null) {
-			return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<String>("<item><guid>" +guid+ "</guid></item>",HttpStatus.BAD_REQUEST);
 		} else {
 			String xml = "<xml>"
 					+ "<feed lang='" + f.getLang() +"'>"
@@ -217,7 +203,7 @@ public class RSSController {
 		Feed f = fs.findFeedContainingItemWithGuid(guid);
 		Item i = fs.findItemWithGuid(guid);
 		if(i == null) {
-			return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<String>("<!DOCTYPE html>" + "<html lang= 'en'> <head><title> </title></head><body><p>" + guid + " not found </p></body></html>",HttpStatus.BAD_REQUEST);
 		} else {
 			String html = "<!DOCTYPE html>"
 					+ "<html lang='" + f.getLang() +"'>"
